@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malevo Pastelería Masa Madre</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/logo.jpeg" alt="Logo Malevo" class="logo">
+            <h1>Malevo Pastelería Masa Madre</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <input type="text" id="productSearch" placeholder="Buscar productos..." onkeyup="filterProducts()">
+        </section>
+
+        <section class="categories">
+            <div class="category-item">
+                <i class="fas fa-utensils"></i>
+                <span>Bebidas</span>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-utensils"></i>
+                <span>Cafetería</span>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-utensils"></i>
+                <span>Tortas</span>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-utensils"></i>
+                <span>Opciones Dulces</span>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-utensils"></i>
+                <span>Opciones Saladas</span>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-utensils"></i>
+                <span>Tortas Enteras</span>
+            </div>
+            <div class="category-item">
+                <i class="fas fa-utensils"></i>
+                <span>Sin TACC</span>
+            </div>
+        </section>
+
+        <section class="our-essence">
+            <p>En Malevo Pastelería Masa Madre, cada bocado es una experiencia. Creamos delicias únicas con amor y la autenticidad de la masa madre, garantizando sabor y calidad en cada preparación.</p>
+        </section>
+
+        <section class="products-list">
+            <h2 id="bebidas-title">Bebidas</h2>
+            <div class="product-category" id="bebidas">
+                <div class="product-item">
+                    <span>Jugo de Naranja Natural</span>
+                    <span class="price">$800</span>
+                </div>
+                <div class="product-item">
+                    <span>Limonada con Menta y Jengibre</span>
+                    <span class="price">$950</span>
+                </div>
+                <div class="product-item">
+                    <span>Licuado de Frutas Rojas</span>
+                    <span class="price">$1000</span>
+                </div>
+                <div class="product-item">
+                    <span>Licuado de Banana y Leche</span>
+                    <span class="price">$900</span>
+                </div>
+                <div class="product-item">
+                    <span>Milkshake de Chocolate</span>
+                    <span class="price">$1100</span>
+                </div>
+                <div class="product-item">
+                    <span>Milkshake de Vainilla</span>
+                    <span class="price">$1050</span>
+                </div>
+                <div class="product-item">
+                    <span>Agua Mineral</span>
+                    <span class="price">$500</span>
+                </div>
+                <div class="product-item">
+                    <span>Gaseosa Cola</span>
+                    <span class="price">$600</span>
+                </div>
+                <div class="product-item">
+                    <span>Té Helado de Durazno</span>
+                    <span class="price">$850</span>
+                </div>
+                <div class="product-item">
+                    <span>Jugo Verde Detox</span>
+                    <span class="price">$1200</span>
+                </div>
+            </div>
+
+            <h2 id="cafeteria-title">Cafetería</h2>
+            <div class="product-category" id="cafeteria">
+                <div class="product-item">
+                    <span>Espresso</span>
+                    <span class="price">$600</span>
+                </div>
+                <div class="product-item">
+                    <span>Café con Leche</span>
+                    <span class="price">$750</span>
+                </div>
+                <div class="product-item">
+                    <span>Capuccino</span>
+                    <span class="price">$800</span>
+                </div>
+                <div class="product-item">
+                    <span>Latte</span>
+                    <span class="price">$850</span>
+                </div>
+                <div class="product-item">
+                    <span>Americano</span>
+                    <span class="price">$700</span>
+                </div>
+                <div class="product-item">
+                    <span>Mocaccino</span>
+                    <span class="price">$900</span>
+                </div>
+                <div class="product-item">
+                    <span>Té Clásico</span>
+                    <span class="price">$650</span>
+                </div>
+                <div class="product-item">
+                    <span>Té de Hierbas</span>
+                    <span class="price">$700</span>
+                </div>
+                <div class="product-item">
+                    <span>Submarino</span>
+                    <span class="price">$950</span>
+                </div>
+                <div class="product-item">
+                    <span>Chocolate Caliente</span>
+                    <span class="price">$850</span>
+                </div>
+            </div>
+
+            <h2 id="tortas-title">Tortas</h2>
+            <div class="product-category" id="tortas">
+                <div class="product-item">
+                    <span>Porción de Torta Rogel</span>
+                    <span class="price">$1500</span>
+                </div>
+                <div class="product-item">
+                    <span>Porción de Chocotorta</span>
+                    <span class="price">$1400</span>
+                </div>
+                <div class="product-item">
+                    <span>Porción de Torta Brownie</span>
+                    <span class="price">$1350</span>
+                </div>
+                <div class="product-item">
+                    <span>Porción de Red Velvet</span>
+                    <span class="price">$1600</span>
+                </div>
+                <div class="product-item">
+                    <span>Porción de Cheesecake de Frutos Rojos</span>
+                    <span class="price">$1550</span>
+                </div>
+                <div class="product-item">
+                    <span>Porción de Tarta de Manzanas</span>
+                    <span class="price">$1300</span>
+                </div>
+                <div class="product-item">
+                    <span>Porción de Lemon Pie</span>
+                    <span class="price">$1450</span>
+                </div>
+                <div class="product-item">
+                    <span>Porción de Selva Negra</span>
+                    <span class="price">$1500</span>
+                </div>
+                <div class="product-item">
+                    <span>Porción de Tiramisú</span>
+                    <span class="price">$1480</span>
+                </div>
+                <div class="product-item">
+                    <span>Porción de Carrot Cake</span>
+                    <span class="price">$1520</span>
+                </div>
+            </div>
+
+            <h2 id="opciones-dulces-title">Opciones Dulces</h2>
+            <div class="product-category" id="opciones-dulces">
+                <div class="product-item">
+                    <span>Medialuna de Manteca</span>
+                    <span class="price">$500</span>
+                </div>
+                <div class="product-item">
+                    <span>Medialuna de Grasa</span>
+                    <span class="price">$450</span>
+                </div>
+                <div class="product-item">
+                    <span>Factura de Pastelera</span>
+                    <span class="price">$550</span>
+                </div>
+                <div class="product-item">
+                    <span>Roll de Canela</span>
+                    <span class="price">$700</span>
+                </div>
+                <div class="product-item">
+                    <span>Muffin de Arándanos</span>
+                    <span class="price">$800</span>
+                </div>
+                <div class="product-item">
+                    <span>Scone de Queso</span>
+                    <span class="price">$750</span>
+                </div>
+                <div class="product-item">
+                    <span>Cookie de Chips de Chocolate</span>
+                    <span class="price">$600</span>
+                </div>
+                <div class="product-item">
+                    <span>Alfajor de Maicena</span>
+                    <span class="price">$650</span>
+                </div>
+                <div class="product-item">
+                    <span>Budín de Limón</span>
+                    <span class="price">$900</span>
+                </div>
+                <div class="product-item">
+                    <span>Cuadrado de Ricota</span>
+                    <span class="price">$850</span>
+                </div>
+            </div>
+
+            <h2 id="opciones-saladas-title">Opciones Saladas</h2>
+            <div class="product-category" id="opciones-saladas">
+                <div class="product-item">
+                    <span>Sándwich de Jamón y Queso</span>
+                    <span class="price">$1200</span>
+                </div>
+                <div class="product-item">
+                    <span>Tostado de Queso y Tomate</span>
+                    <span class="price">$1100</span>
+                </div>
+                <div class="product-item">
+                    <span>Focaccia de Romero y Aceite de Oliva</span>
+                    <span class="price">$950</span>
+                </div>
+                <div class="product-item">
+                    <span>Empanada de Carne</span>
+                    <span class="price">$700</span>
+                </div>
+                <div class="product-item">
+                    <span>Empanada de Pollo</span>
+                    <span class="price">$700</span>
+                </div>
+                <div class="product-item">
+                    <span>Quiche Lorraine</span>
+                    <span class="price">$1300</span>
+                </div>
+                <div class="product-item">
+                    <span>Sándwich de Verduras Asadas</span>
+                    <span class="price">$1150</span>
+                </div>
+                <div class="product-item">
+                    <span>Chipá</span>
+                    <span class="price">$200</span>
+                </div>
+                <div class="product-item">
+                    <span>Tartaleta de Jamón y Queso</span>
+                    <span class="price">$900</span>
+                </div>
+                <div class="product-item">
+                    <span>Brioche Salado</span>
+                    <span class="price">$850</span>
+                </div>
+            </div>
+
+            <h2 id="tortas-enteras-title">Tortas Enteras</h2>
+            <div class="product-category" id="tortas-enteras">
+                <div class="product-item">
+                    <span>Torta Rogel Grande</span>
+                    <span class="price">$9000</span>
+                </div>
+                <div class="product-item">
+                    <span>Chocotorta Familiar</span>
+                    <span class="price">$8500</span>
+                </div>
+                <div class="product-item">
+                    <span>Torta Brownie para Eventos</span>
+                    <span class="price">$8000</span>
+                </div>
+                <div class="product-item">
+                    <span>Red Velvet Premium</span>
+                    <span class="price">$9500</span>
+                </div>
+                <div class="product-item">
+                    <span>Cheesecake de Frutos Rojos XL</span>
+                    <span class="price">$9200</span>
+                </div>
+                <div class="product-item">
+                    <span>Tarta de Manzanas Grande</span>
+                    <span class="price">$7800</span>
+                </div>
+                <div class="product-item">
+                    <span>Lemon Pie Entero</span>
+                    <span class="price">$8700</span>
+                </div>
+                <div class="product-item">
+                    <span>Selva Negra Completa</span>
+                    <span class="price">$9000</span>
+                </div>
+                <div class="product-item">
+                    <span>Tiramisú Familiar</span>
+                    <span class="price">$8900</span>
+                </div>
+                <div class="product-item">
+                    <span>Carrot Cake Grande</span>
+                    <span class="price">$9100</span>
+                </div>
+            </div>
+
+            <h2 id="sin-tacc-title">Sin TACC</h2>
+            <div class="product-category" id="sin-tacc">
+                <div class="product-item">
+                    <span>Brownie Sin TACC</span>
+                    <span class="price">$1400</span>
+                </div>
+                <div class="product-item">
+                    <span>Alfajor de Maicena Sin TACC</span>
+                    <span class="price">$700</span>
+                </div>
+                <div class="product-item">
+                    <span>Muffin de Chocolate Sin TACC</span>
+                    <span class="price">$850</span>
+                </div>
+                <div class="product-item">
+                    <span>Tarta de Ricota Sin TACC</span>
+                    <span class="price">$1500</span>
+                </div>
+                <div class="product-item">
+                    <span>Pan de Queso Sin TACC</span>
+                    <span class="price">$600</span>
+                </div>
+                <div class="product-item">
+                    <span>Galletas de Avena y Pasas Sin TACC</span>
+                    <span class="price">$750</span>
+                </div>
+                <div class="product-item">
+                    <span>Budín de Naranja Sin TACC</span>
+                    <span class="price">$950</span>
+                </div>
+                <div class="product-item">
+                    <span>Cupcake de Vainilla Sin TACC</span>
+                    <span class="price">$800</span>
+                </div>
+                <div class="product-item">
+                    <span>Focaccia de Aceitunas Sin TACC</span>
+                    <span class="price">$1000</span>
+                </div>
+                <div class="product-item">
+                    <span>Tarta de Frutas Sin TACC</span>
+                    <span class="price">$1600</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><i class="fas fa-map-marker-alt"></i> Monte Grande</p>
+            <p><i class="fas fa-clock"></i> Miércoles - Jueves y Viernes de 15 a 19 hs</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/malevo.mg/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@malevomg" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <div class="map-link">
+                <a href="https://maps.google.com/?cid=7304938837512701748" target="_blank">Ver en Google Maps</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5491123876719?text=Bienvenidos%20a%20Malevo%2C%20en%20que%20podemos%20ayudarte%20hoy." class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
